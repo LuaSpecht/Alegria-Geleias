@@ -2,14 +2,14 @@ export const tradicionais = [
   {
     id: 'morango',
     nome: 'Morango',
-    descricao: 'A geleia clássica da casa. Morangos selecionados, cozidos devagar pra manter o sabor de fruta fresca.',
+    descricao: 'A geleia clássica da casa. Morangos selecionados de agricultores da região, cozidos devagar pra manter o sabor de fruta fresca.',
     cor: 'red',
     tag: 'A mais querida',
   },
   {
     id: 'maca-canela',
     nome: 'Maçã com Canela',
-    descricao: 'Maçãs cozidas lentamente com canela em pau. Combinação clássica que lembra doce de vó.',
+    descricao: 'Maçãs cozidas lentamente com canela em pó, num equilíbrio tão certeiro que quase dispensa acompanhamento.',
     cor: 'orange',
   },
   {
@@ -36,21 +36,21 @@ export const edicoesLimitadas = [
   {
     id: 'frutas-vermelhas',
     nome: 'Frutas Vermelhas',
-    descricao: 'Mix de frutas vermelhas selecionadas, em edição limitada.',
+    descricao: 'Morango, amora e framboesa numa combinação perfeita — deliciosa pura, na sua receita favorita ou como acompanhamento.',
     cor: 'red',
     esgotado: true,
   },
   {
     id: 'frutas-amarelas',
     nome: 'Frutas Amarelas',
-    descricao: 'Mix de frutas amarelas selecionadas, em edição limitada.',
+    descricao: 'Banana, maracujá e manga num mix refrescante e cheio de sabor.',
     cor: 'orange',
     esgotado: true,
   },
   {
     id: 'frutas-verdes',
     nome: 'Frutas Verdes',
-    descricao: 'Mix de frutas verdes selecionadas, em edição limitada.',
+    descricao: 'Kiwi, uva e maçã verde no nosso sabor mais cítrico — uma iguaria à parte.',
     cor: 'green',
     esgotado: true,
   },

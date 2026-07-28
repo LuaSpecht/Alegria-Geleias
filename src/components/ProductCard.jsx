@@ -1,4 +1,5 @@
 import { whatsappLinkFor } from '../data/contato'
+import { FruitIcon } from './icons/fruits'
 import './ProductCard.css'
 
 function ProductCard({ produto }) {
@@ -13,7 +14,9 @@ function ProductCard({ produto }) {
       ) : (
         produto.tag && <span className="product-card__tag">{produto.tag}</span>
       )}
-      <div className="product-card__jar" aria-hidden="true" />
+      <div className="product-card__jar" aria-hidden="true">
+        <FruitIcon id={produto.id} className="product-card__jar-icon" />
+      </div>
       <h3>{produto.nome}</h3>
       <p>{produto.descricao}</p>
       {produto.esgotado ? (

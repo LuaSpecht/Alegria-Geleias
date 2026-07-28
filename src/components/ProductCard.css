@@ -50,10 +50,15 @@
   border-radius: 50%;
   margin-bottom: 12px;
   border: 3px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
-.product-card--esgotado .product-card__jar {
-  background: var(--ink-soft) !important;
+.product-card__jar-icon {
+  width: 30px;
+  height: 30px;
 }
 
 .product-card h3 {
