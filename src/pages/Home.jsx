@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { tradicionais } from '../data/produtos'
 import ProductCard from '../components/ProductCard'
+import Carousel from '../components/Carousel'
 import './Home.css'
 
 function Home() {
@@ -38,11 +39,10 @@ function Home() {
           <h2>Sabores tradicionais</h2>
           <Link to="/produtos">Ver todos os sabores →</Link>
         </div>
-        <div className="product-grid">
-          {destaques.map((produto) => (
-            <ProductCard key={produto.id} produto={produto} />
-          ))}
-        </div>
+        <Carousel
+          items={destaques}
+          renderItem={(produto) => <ProductCard produto={produto} />}
+        />
       </section>
 
       <section className="section section--valores">
