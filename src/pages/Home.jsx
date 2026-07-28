@@ -2,10 +2,16 @@ import { Link } from 'react-router-dom'
 import { tradicionais } from '../data/produtos'
 import ProductCard from '../components/ProductCard'
 import Carousel from '../components/Carousel'
+import useDocumentMeta from '../hooks/useDocumentMeta'
 import './Home.css'
 
 function Home() {
   const destaques = tradicionais
+
+  useDocumentMeta(
+    'Alegria Geleias | Geleias artesanais de Curitiba',
+    'Geleias artesanais feitas à mão em Curitiba: morango, maçã com canela, abacaxi com pimenta calabresa e mais. Peça pelo WhatsApp ou compre na nossa loja no Shopee.'
+  )
 
   return (
     <>

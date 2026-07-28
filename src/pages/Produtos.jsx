@@ -1,8 +1,14 @@
 import { tradicionais, edicoesLimitadas, edicoesSazonais } from '../data/produtos'
 import ProductCard from '../components/ProductCard'
+import useDocumentMeta from '../hooks/useDocumentMeta'
 import './Produtos.css'
 
 function Produtos() {
+  useDocumentMeta(
+    'Nossos Sabores | Alegria Geleias',
+    'Conheça todos os sabores da Alegria Geleias: tradicionais, edições limitadas e sazonais. Geleias artesanais feitas à mão em Curitiba.'
+  )
+
   return (
     <section className="section produtos-page">
       <div className="section__header">

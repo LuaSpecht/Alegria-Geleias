@@ -1,9 +1,15 @@
 import WhatsAppIcon from '../components/icons/WhatsAppIcon'
 import ShopeeIcon from '../components/icons/ShopeeIcon'
 import { whatsappLink, shopeeLink } from '../data/contato'
+import useDocumentMeta from '../hooks/useDocumentMeta'
 import './Contato.css'
 
 function Contato() {
+  useDocumentMeta(
+    'Contato | Alegria Geleias',
+    'Fale com a Alegria Geleias pelo WhatsApp ou visite nossa loja oficial no Shopee. Geleias artesanais feitas à mão em Curitiba.'
+  )
+
   return (
     <section className="section contato-page">
       <div className="section__header">
