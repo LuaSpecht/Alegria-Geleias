@@ -1,0 +1,135 @@
+:root {
+  /* paleta extraída do logo */
+  --cream: #fdf8f0;
+  --cream-2: #f7ecda;
+  --ink: #3a1a2c;
+  --ink-soft: #6b5165;
+
+  --red: #e0142e;
+  --red-dark: #b80f24;
+  --orange: #fa8228;
+  --orange-dark: #d96a17;
+  --green: #4fa032;
+  --green-dark: #00823c;
+  --blue: #0090cc;
+
+  --border: #f0dfc4;
+  --shadow: 0 12px 30px -12px rgba(58, 26, 44, 0.25);
+
+  --sans: 'Baloo 2', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --script: 'Pacifico', cursive;
+
+  color-scheme: light;
+  color: var(--ink);
+  background: var(--cream);
+  font: 16px/1.6 var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+p {
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.script {
+  font-family: var(--script);
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.98rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px) rotate(-0.5deg);
+}
+
+.btn--primary {
+  background: var(--red);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.btn--primary:hover {
+  background: var(--red-dark);
+}
+
+.btn--ghost {
+  background: #fff;
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.section {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.section__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.section__header a {
+  font-weight: 700;
+  color: var(--orange-dark);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}

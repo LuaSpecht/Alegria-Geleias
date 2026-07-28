@@ -1,0 +1,18 @@
+.produtos-page .section__header {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.produtos-categoria {
+  margin-bottom: 48px;
+}
+
+.produtos-categoria h2 {
+  margin-bottom: 4px;
+}
+
+.produtos-categoria__aviso {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+}

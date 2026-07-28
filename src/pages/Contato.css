@@ -1,0 +1,67 @@
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contato-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background: #fff;
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease;
+}
+
+.contato-card:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+}
+
+.contato-card h2 {
+  margin: 4px 0 0;
+}
+
+.contato-card p {
+  font-size: 0.95rem;
+}
+
+.contato-card .btn {
+  margin-top: 8px;
+}
+
+.contato-card__icon {
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: content-box;
+}
+
+.contato-card--whatsapp .contato-card__icon {
+  background: #25d366;
+}
+
+.contato-card--whatsapp .btn {
+  background: #25d366;
+}
+
+.contato-card--shopee .contato-card__icon {
+  background: var(--orange);
+}
+
+.contato-card--shopee .btn {
+  background: var(--orange);
+}
+
+.contato-info {
+  background: var(--cream-2);
+  border: 3px dashed var(--border);
+  border-radius: 20px;
+  padding: 24px;
+}

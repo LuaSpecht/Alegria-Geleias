@@ -1,0 +1,144 @@
+.product-card {
+  background: #fff;
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: transform 0.15s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+}
+
+.product-card--esgotado {
+  opacity: 0.72;
+}
+
+.product-card--esgotado:hover {
+  transform: none;
+}
+
+.product-card__tag {
+  position: absolute;
+  top: -12px;
+  right: 16px;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+}
+
+.product-card__tag--esgotado {
+  background: var(--ink-soft);
+}
+
+.product-card__jar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 3px solid var(--ink);
+}
+
+.product-card--esgotado .product-card__jar {
+  background: var(--ink-soft) !important;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.product-card__cta {
+  margin-top: 12px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #fff;
+  border: 2px solid var(--ink);
+  transition: transform 0.15s ease;
+}
+
+.product-card__cta:hover {
+  transform: translateY(-2px);
+}
+
+.product-card__cta--disabled {
+  background: var(--cream-2);
+  color: var(--ink-soft);
+  border-color: var(--border);
+  cursor: default;
+}
+
+.product-card__cta--disabled:hover {
+  transform: none;
+}
+
+/* variações de cor por sabor */
+.product-card--red .product-card__jar {
+  background: var(--red);
+}
+.product-card--red .product-card__tag {
+  background: var(--red);
+}
+.product-card--red .product-card__cta {
+  background: var(--red);
+}
+
+.product-card--orange .product-card__jar {
+  background: var(--orange);
+}
+.product-card--orange .product-card__tag {
+  background: var(--orange);
+}
+.product-card--orange .product-card__cta {
+  background: var(--orange-dark);
+}
+
+.product-card--green .product-card__jar {
+  background: var(--green);
+}
+.product-card--green .product-card__tag {
+  background: var(--green);
+}
+.product-card--green .product-card__cta {
+  background: var(--green);
+}
+
+.product-card--green-dark .product-card__jar {
+  background: var(--green-dark);
+}
+.product-card--green-dark .product-card__tag {
+  background: var(--green-dark);
+}
+.product-card--green-dark .product-card__cta {
+  background: var(--green-dark);
+}
+
+.product-card--blue .product-card__jar {
+  background: var(--blue);
+}
+.product-card--blue .product-card__tag {
+  background: var(--blue);
+}
+.product-card--blue .product-card__cta {
+  background: var(--blue);
+}
