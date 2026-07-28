@@ -21,9 +21,9 @@ function Home() {
             <Link to="/produtos" className="btn btn--primary">
               Ver produtos
             </Link>
-            <Link to="/sobre" className="btn btn--ghost">
+            <a href="#historia" className="btn btn--ghost">
               Nossa história
-            </Link>
+            </a>
           </div>
         </div>
         <div className="hero__image">
@@ -57,6 +57,30 @@ function Home() {
         <div className="valor">
           <h3>Receitas de família</h3>
           <p>Cada sabor carrega uma história — algumas passadas de geração em geração.</p>
+        </div>
+      </section>
+
+      <section id="historia" className="section historia">
+        <div className="section__header">
+          <h2>Nossa história</h2>
+        </div>
+        <div className="historia__conteudo">
+          <p>
+            A Alegria Geleias nasceu na cozinha de casa, em Curitiba, entre potes fervendo e o
+            cheiro de fruta madura tomando conta do bairro. O que começou como presente para
+            amigos e vizinhos virou uma pequena produção artesanal, sempre em lotes limitados
+            para garantir o mesmo cuidado de sempre.
+          </p>
+          <p>
+            Trabalhamos com produtores da região metropolitana de Curitiba e do litoral
+            paranaense, priorizando frutas da época. Nossas receitas misturam sabores
+            tradicionais, como morango e maçã com canela, com combinações mais ousadas — caso
+            do abacaxi com pimenta calabresa e da goiaba com especiarias.
+          </p>
+          <p>
+            Sem conservantes, sem pressa. Cada geleia leva o tempo que precisa no fogo baixo,
+            porque é assim que se preserva o sabor de verdade.
+          </p>
         </div>
       </section>
     </>
