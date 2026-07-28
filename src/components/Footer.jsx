@@ -16,7 +16,7 @@ function Footer() {
       </div>
       <div className="site-footer__inner">
         <div>
-          <img src="/alegria-logo.png" alt="Alegria Geleias" className="site-footer__logo" />
+          <img src="/alegria-logo-light.png" alt="Alegria Geleias" className="site-footer__logo" />
           <p>Geleias artesanais feitas à mão em Curitiba/PR.</p>
         </div>
         <div className="site-footer__contato">
