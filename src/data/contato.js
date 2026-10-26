@@ -1,4 +1,4 @@
-const whatsappNumero = '5541999081382'
+const whatsappNumero = '5541996882188'
 
 export function whatsappLinkFor(mensagem) {
   return `https://wa.me/${whatsappNumero}?text=${encodeURIComponent(mensagem)}`
